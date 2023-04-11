@@ -1,6 +1,6 @@
-import { View, Text, SafeAreaView, StyleSheet, Platform, StatusBar, Image,ScrollView } from 'react-native'
+import { View, Text, SafeAreaView, StyleSheet, Platform, StatusBar, Image, ScrollView } from 'react-native'
 import React from 'react'
-import { MaterialCommunityIcons,Entypo } from 'react-native-vector-icons';
+import { MaterialCommunityIcons, Entypo } from 'react-native-vector-icons';
 
 export default function App() {
   return (
@@ -109,8 +109,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'White',
     borderRadius: 20,
     margin: 14,
-    backgroundColor:'white',
-    overflow:'hidden'
+    backgroundColor: 'white',
+    overflow: 'hidden'
   },
   txt2: {
     fontSize: 15,
