@@ -12,12 +12,12 @@ export default function App() {
           <Image source={require("./assets/download.png")} style={styles.img1} />
         </View>
         <View style={styles.view2}>
-          <View style={styles.box1}><Text style={styles.boxtxt}>Товч ном</Text>
+          <View style={styles.box1}><Text style={styles.boxtxt}>Товч ном</Text>      
             <Entypo name="triangle-right" style={styles.boxtxt}></Entypo>
           </View>
           <View style={styles.box2}><Text style={styles.boxtxt}>Цахим ном</Text></View>
           <View style={styles.box3}><Text style={styles.boxtxt}>Аудио ном</Text></View>
-          <View style={styles.box4}><Text style={styles.boxtxt}>Подкаст</Text></View>
+          <View style={styles.box4}><Text style={styles.boxtxt}>Подкаст</Text></View>   
 
         </View>
         <View style={styles.view3}>
