@@ -1,5 +1,5 @@
 import { StyleSheet, View, StatusBar, SafeAreaView, Text } from 'react-native';
-import { MaterialCommunityIcons, Ionicons,EvilIcons} from '@expo/vector-icons';
+import { MaterialCommunityIcons, Ionicons, EvilIcons, Entypo,Feather } from '@expo/vector-icons';
 export default function App() {
     return (
 
@@ -8,7 +8,11 @@ export default function App() {
                 <View style={styles.cuv1}>
                     <Ionicons style={styles.icon1} name="list" />
                     <Text style={styles.tex}>297 </Text>
-                <EvilIcons style={{fontSize:40}} name='sc-pinterest'/>
+                    <EvilIcons style={{ fontSize: 35, marginBottom: 5 }} name='sc-pinterest' />
+                    <View style={styles.icon2}>
+                        <Ionicons style={{ fontSize: 30}} name="search" />       
+                    </View>
+                    <Entypo style={{ fontSize: 30, marginLeft:10}} name="bell" />
                 </View>
                 <View style={styles.cuv2}></View>
                 <View style={styles.cuv3}></View>
@@ -26,10 +30,10 @@ const styles = StyleSheet.create({
         paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
     },
     icon1: {
-        fontSize: 40,
+        fontSize: 35,
         alignItems: "center",
         flexDirection: 'row',
-        marginLeft: 10,
+        marginLeft: 30,
     },
     cuv1: {
         flexDirection: 'row',
@@ -39,8 +43,11 @@ const styles = StyleSheet.create({
 
     },
     tex: {
-        fontSize: 23,
-        marginLeft:10,
+        fontSize: 21,
+        marginLeft: 10,
+    },
+    icon2: {
+        marginLeft: 170,
     },
 }
 )
