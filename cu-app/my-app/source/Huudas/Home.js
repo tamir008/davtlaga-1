@@ -1,9 +1,13 @@
-import { StyleSheet, View, StatusBar, SafeAreaView, Text } from 'react-native';
-import { MaterialCommunityIcons, Ionicons, EvilIcons, Entypo,Feather } from '@expo/vector-icons';
+import { StyleSheet, View, StatusBar, SafeAreaView, Text,ImageBackground } from 'react-native';
+import { MaterialCommunityIcons, Ionicons, EvilIcons, Entypo,Feather, } from '@expo/vector-icons';
+//https://cdn.zochil.shop/zochil.mn/cover.png
 export default function App() {
+    const image={uri:"https://cdn.zochil.shop/zochil.mn/cover.png"};
+    const localImage = require("../../assets/cu_logo.jpg");
     return (
 
         <SafeAreaView style={styles.container}>
+            <ImageBackground source={localImage}resizeMode='cover' style={styles.cont} >
             <View style={styles.cuv0}>
                 <View style={styles.cuv1}>
                     <Ionicons style={styles.icon1} name="list" />
@@ -14,10 +18,20 @@ export default function App() {
                     </View>
                     <Entypo style={{ fontSize: 30, marginLeft:10}} name="bell" />
                 </View>
-                <View style={styles.cuv2}></View>
+                <View style={styles.cuv2}>
+                    <View style={styles.shat}>
+                    <Text style={{}}>Check-in урамшуулал</Text>
+                    <Text>1-р шат</Text>
+                    </View>
+                    <View style={styles.ognoo}>
+                    <Text style={{}}>Кофе американо</Text>
+                    <Text>Дуусах огноо</Text>
+                    </View>
+                </View>
                 <View style={styles.cuv3}></View>
                 <View style={styles.cuv4}></View>
             </View>
+            </ImageBackground>
         </SafeAreaView>
 
 
@@ -25,9 +39,10 @@ export default function App() {
 }
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 0.4,
         backgroundColor: "white",
         paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+        
     },
     icon1: {
         fontSize: 35,
@@ -49,6 +64,11 @@ const styles = StyleSheet.create({
     icon2: {
         marginLeft: 170,
     },
+    cont:{
+        width:'100%',
+        height:'100%',
+    },
+
 }
 )
 
