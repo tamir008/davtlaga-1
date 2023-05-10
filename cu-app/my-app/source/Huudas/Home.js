@@ -1,5 +1,5 @@
 import { StyleSheet, View, StatusBar, SafeAreaView, Text, ImageBackground, Image, ScrollView, localImage } from 'react-native';
-import { MaterialCommunityIcons, Ionicons, EvilIcons, Entypo, Feather, } from '@expo/vector-icons';
+import { MaterialCommunityIcons, Ionicons, EvilIcons, Entypo, Feather,AntDesign } from '@expo/vector-icons';
 //https://cdn.zochil.shop/zochil.mn/cover.png
 export default function App() {
     const image = { uri: "https://cdn.zochil.shop/zochil.mn/cover.png" };
@@ -23,25 +23,35 @@ export default function App() {
                                 <Entypo style={{ fontSize: 30, marginLeft: 10 }} name="bell" />
                             </View>
                             <View>
-                            <View style={styles.cu2}>
-                                <Text style={styles.t1}>Check-in урамшуулал</Text>
-                                <Text style={styles.t2}>1-р шат</Text>                                                                         
-                            </View>
-                            <View style={styles.ognoo}>
-                            <Text style={{}}>Кофе американо</Text>
-                            <Text>Дуусах огноо:2023-10-23</Text>
-                            <Image style={styles.asuult} source={require('./download.png')} />
-                            </View>
+                                <View style={styles.cu2}>
+                                    <Text style={styles.t1}>Check-in урамшуулал</Text>
+                                    <Text style={styles.t2}>1-р шат</Text>
+                                </View>
+                                <View style={styles.ognoo}>
+                                    <Text style={{}}>Кофе американо</Text>
+                                    <View>
+                                    <Text>Дуусах огноо:2023-10-23</Text>
+                                    </View>
+                                    <Image style={styles.asuult} source={require('./download.png')} />
+                                    <Image style={styles.cofe} source={require('..//Hot-Drinks-Amerikano.jpg')} />
+
+                                </View>
                             </View>
                             {/* <View style={styles.kk}>
                             <View style={styles.ognoo}>
- s                                <Texttyle={{}}>Кофе американо</Text>
+ s                                <Tex sttyle={{}}>Кофе американо</Text>
                                 <Text>Дуусах огноо:2023-10-23</Text>
                                 <Image style={styles.asuult} source={require('./download.png')} />
                                 <Image style={{ width: 100, height: 100 }} source={require('../Hot-Drinks-Amerikano.jpg')} />
                             </View> */}
                         </View>
-                        <View style={styles.cuv3}></View>
+                        <View style={styles.cuv3}>
+                        <AntDesign  style={styles.icon1} name="home" />
+                        <Feather style={styles.icon1} name="shopping-bag" />
+                        <AntDesign style={styles.icon1} name="qrcode" />
+                        <AntDesign style={styles.icon1} name="staro" />
+                        <EvilIcons style={styles.icon1} name="user" />
+                        </View>
                         <View style={styles.cuv4}></View>
 
                     </ImageBackground>
@@ -91,13 +101,24 @@ const styles = StyleSheet.create({
     cu2: {
         flexDirection: "row",
         justifyContent: 'space-between',
-        marginLeft:20,
-        alignItems: 'center',   
+        marginLeft: 20,
+        alignItems: 'center',
     },
-    ognoo:{
+    ognoo: {
         fontSize: 30,
         marginLeft: 20,
+        flexDirection: "row",
     },
+    cofe:{
+        width: 35,
+        height: 50,
+        alignItems: 'center',
+    },
+    cuv3:{
+        flexDirection: "row",
+        justifyContent: "space-around",
+    },
+
 },
 
 )
