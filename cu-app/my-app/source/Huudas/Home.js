@@ -56,9 +56,19 @@ export default function App() {
                 </View>
             </View>
             <View>
-                <View>
-                <Text>Судалгаа</Text>
-                <MaterialIcons name='keyboard-arrow-right'/>
+                <View style={styles.sud}>
+                <Text style={{fontSize:20}}>Судалгаа</Text>
+                <View style={styles.arrow}>
+                <MaterialIcons style={{fontSize:30}} name='keyboard-arrow-right'/>
+                </View>
+                </View>
+            </View>
+            <View>
+                <View style={styles.hud}>
+                <Text style={{fontSize:20}}>CU-гээс санал болгох</Text>
+                <View style={styles.arrow}>
+                <MaterialIcons style={{fontSize:30}} name='keyboard-arrow-right'/>
+                </View>
                 </View>
             </View>
         </SafeAreaView >
@@ -169,6 +179,16 @@ const styles = StyleSheet.create({
         borderBottomLeftRadius:20,
         height:70,
     },
+    sud:{
+        marginLeft:10,
+        flexDirection:'row',  
+        gap:260,
+    },
+    hud:{
+        marginLeft:10,
+        flexDirection:'row',
+        // gap: 10,
+    }
 },
 
 )
