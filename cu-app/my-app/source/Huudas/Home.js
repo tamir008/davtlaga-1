@@ -185,9 +185,10 @@ const styles = StyleSheet.create({
         gap:260,
     },
     hud:{
+        marginTop:10,
         marginLeft:10,
         flexDirection:'row',
-        // gap: 10,
+        gap: 135,
     }
 },
 
