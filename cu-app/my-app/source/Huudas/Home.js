@@ -1,5 +1,5 @@
 import { StyleSheet, View, StatusBar, SafeAreaView, Text, ImageBackground, Image, ScrollView, localImage } from 'react-native';
-import { MaterialCommunityIcons, Ionicons, EvilIcons, Entypo, MaterialIcons, Octicons } from '@expo/vector-icons';
+import { MaterialCommunityIcons, Ionicons, EvilIcons, Entypo, MaterialIcons, Octicons, Feather,AntDesign, } from '@expo/vector-icons';
 //https://cdn.zochil.shop/zochil.mn/cover.png
 export default function App() {
     return (
@@ -51,25 +51,48 @@ export default function App() {
                     <MaterialIcons style={styles.done} name='done' />
                 </View>
                 <View style={styles.texttt}>
-                    <Text>Та 10,000$-өөс дээш худалдан авалт бүртээ CU апаа уншуулж, тамга цуглуулан бүтээгдэхүүн бэлгэнд аваарай 
-</Text>
+                    <Text>Та 10,000$-өөс дээш худалдан авалт бүртээ CU апаа уншуулж, тамга цуглуулан бүтээгдэхүүн бэлгэнд аваарай
+                    </Text>
                 </View>
             </View>
             <View>
                 <View style={styles.sud}>
-                <Text style={{fontSize:20}}>Судалгаа</Text>
-                <View style={styles.arrow}>
-                <MaterialIcons style={{fontSize:30}} name='keyboard-arrow-right'/>
-                </View>
+                    <Text style={{ fontSize: 20 }}>Судалгаа</Text>
+                    <View style={styles.arrow}>
+                        <MaterialIcons style={{ fontSize: 30 }} name='keyboard-arrow-right' />
+                    </View>
                 </View>
             </View>
             <View>
-                <View style={styles.hud}>
-                <Text style={{fontSize:20}}>CU-гээс санал болгох</Text>
-                <View style={styles.arrow}>
-                <MaterialIcons style={{fontSize:30}} name='keyboard-arrow-right'/>
+                <View>
+                    <View style={styles.hud}>
+                        <Text style={{ fontSize: 20 }}>CU-гээс санал болгох</Text>
+                        <View style={styles.arrow}>
+                            <MaterialIcons style={{ fontSize: 30 }} name='keyboard-arrow-right' />
+                        </View>
+                    </View>
                 </View>
-                </View>
+                <View style={styles.ad} >                
+                        <Feather style={{fontSize: 30 }} name='coffee' />                       
+                        <MaterialCommunityIcons style={{ fontSize:30,marginLeft: 10, }} name='cupcake'/>
+                        <Ionicons style={{fontSize: 30,marginLeft: 30,  }} name='md-fast-food-outline'/>
+                        <MaterialCommunityIcons style={{fontSize: 30,marginLeft: 10, }} name='cup-water'/>
+                        <MaterialCommunityIcons style={{fontSize: 30 }} name='bottle-soda-classic-outline'/>
+                    </View>               
+                <View />
+            </View>
+            <View style={styles.af}>
+                <Text>Кофе</Text>
+                <Text>Амттан</Text>
+                <Text>Түргэн хоол</Text>
+                <Text>Ус</Text>
+                <Text>Ундаа</Text>
+            </View>
+            <View style={styles.ag} >
+                <AntDesign style={{fontSize: 30,marginRight:20, }} name='home' />
+                <Feather style={{fontSize: 30 }} name='archive'/>
+                <AntDesign style={{fontSize: 30 }} name='qrcode'/>
+                <AntDesign  style={{fontSize: 30 }} name='profile' />
             </View>
         </SafeAreaView >
 
@@ -142,7 +165,7 @@ const styles = StyleSheet.create({
         marginRight: 20,
     },
     su: {
-        backgroundColor: '#ECF0F1',
+        backgroundColor: '#f8f8ff',
         borderWidth: 1,
         borderColor: '#D7DBDD',
         height: 250,
@@ -155,41 +178,57 @@ const styles = StyleSheet.create({
         marginRight: 20,
     },
     done: {
-        fontSize: 30, 
+        fontSize: 30,
         borderWidth: 1,
-        width:30,
+        width: 30,
         height: 30,
         alignItems: 'center',
         borderRadius: 30,
         justifyContent: 'center',
-        backgroundColor:'#D7DBDD',
+        backgroundColor: '#D7DBDD',
     },
     ddone: {
         flexDirection: 'row',
+        marginLeft: 10,
     },
-    sash:{
-        fontSize:30,
+    sash: {
+        fontSize: 30,
     },
-    texttt:{
-        alignItems:'center',
-        paddingTop:8,
-        backgroundColor:'#FEF5E7',
-        marginTop:50,
-        borderBottomEndRadius:20,
-        borderBottomLeftRadius:20,
-        height:70,
+    texttt: {
+        alignItems: 'center',
+        paddingTop: 8,
+        backgroundColor: '#FEF5E7',
+        marginTop: 50,
+        borderBottomEndRadius: 20,
+        borderBottomLeftRadius: 20,
+        height: 70,
     },
-    sud:{
-        marginLeft:10,
-        flexDirection:'row',  
-        gap:260,
+    sud: {
+        marginLeft: 10,
+        flexDirection: 'row',
+        gap: 260,
     },
-    hud:{
-        marginTop:10,
-        marginLeft:10,
-        flexDirection:'row',
+    hud: {
+        marginTop: 10,
+        marginLeft: 10,
+        flexDirection: 'row',
         gap: 135,
-    }
+    },
+    ad:{
+        flexDirection: 'row',
+        justifyContent: "space-around",
+        marginTop: 40,
+    },
+    af:{
+        flexDirection: 'row',
+        justifyContent: "space-around",
+    },
+    ag:{
+        flexDirection: 'row',
+        justifyContent: "space-around",
+        marginTop: 20,
+    },
+
 },
 
 )
