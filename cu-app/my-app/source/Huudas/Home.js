@@ -1,7 +1,7 @@
-import { StyleSheet, View, StatusBar, SafeAreaView, Text, ImageBackground, Image, ScrollView, localImage } from 'react-native';
+import { StyleSheet, View, StatusBar, SafeAreaView, Text, ImageBackground, Image, ScrollView, localImage, Pressable } from 'react-native';
 import { MaterialCommunityIcons, Ionicons, EvilIcons, Entypo, MaterialIcons, Octicons, Feather,AntDesign, } from '@expo/vector-icons';
 //https://cdn.zochil.shop/zochil.mn/cover.png
-export default function App() {
+export default function App({navigation}) {
     return (
         <SafeAreaView style={styles.container}>
             <View>
@@ -89,11 +89,18 @@ export default function App() {
                 <Text>Ундаа</Text>
             </View>
             <View style={styles.ag} >
-                <AntDesign style={{fontSize: 30,marginRight:20, }} name='home' />
+                <AntDesign style={{fontSize: 30,}} name='home' />
+                <Pressable onPress={()=> navigation.navigate('Baraa')} >
                 <Feather style={{fontSize: 30 }} name='archive'/>
+                </Pressable>
                 <AntDesign style={{fontSize: 30 }} name='qrcode'/>
+                <AntDesign style={{fontSize: 30 }} name='tago'/>
                 <AntDesign  style={{fontSize: 30 }} name='profile' />
             </View>
+            <View st >
+                
+            </View>
+
         </SafeAreaView >
 
 
@@ -226,7 +233,8 @@ const styles = StyleSheet.create({
     ag:{
         flexDirection: 'row',
         justifyContent: "space-around",
-        marginTop: 20,
+        marginTop: 50,
+
     },
 
 },
