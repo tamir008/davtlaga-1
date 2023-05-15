@@ -97,9 +97,6 @@ export default function App({navigation}) {
                 <AntDesign style={{fontSize: 30 }} name='tago'/>
                 <AntDesign  style={{fontSize: 30 }} name='profile' />
             </View>
-            <View st >
-                
-            </View>
 
         </SafeAreaView >
 
