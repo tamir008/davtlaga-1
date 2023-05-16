@@ -1,5 +1,5 @@
 import { StyleSheet, View, StatusBar, SafeAreaView, Text, ImageBackground, Image, ScrollView, localImage, Pressable } from 'react-native';
-import { MaterialCommunityIcons, Ionicons, EvilIcons, Entypo, MaterialIcons, Octicons, Feather, AntDesign, } from '@expo/vector-icons';
+import { MaterialCommunityIcons, Ionicons, EvilIcons, Entypo, MaterialIcons, Octicons, Feather, AntDesign,FontAwesome } from '@expo/vector-icons';
 //https://cdn.zochil.shop/zochil.mn/cover.png
 export default function App({ navigation }) {
     return (
@@ -87,6 +87,7 @@ export default function App({ navigation }) {
                 </View>
                 <View />
             </View>
+            
             <View style={styles.af}>
                 <Text>Кофе</Text>
                 <Text>Амттан</Text>
@@ -131,7 +132,7 @@ const styles = StyleSheet.create({
         fontSize: 35,
         alignItems: "center",
         flexDirection: 'row',
-        marginLeft: 30,
+        marginLeft: 20,
 
     },
     cuv1: {
@@ -183,10 +184,10 @@ const styles = StyleSheet.create({
         marginRight: 20,
     },
     su: {
-        backgroundColor: '#f8f8ff',
+        backgroundColor: 'white',
         borderWidth: 1,
         borderColor: '#D7DBDD',
-        height: 250,
+        height: 235,
         width: 380,
         marginLeft: 15,
         borderRadius: 20,
@@ -216,7 +217,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingTop: 8,
         backgroundColor: '#FEF5E7',
-        marginTop: 50,
+        marginTop: 30,
         borderBottomEndRadius: 20,
         borderBottomLeftRadius: 20,
         height: 70,
