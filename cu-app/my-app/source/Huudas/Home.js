@@ -1,7 +1,7 @@
 import { StyleSheet, View, StatusBar, SafeAreaView, Text, ImageBackground, Image, ScrollView, localImage, Pressable } from 'react-native';
-import { MaterialCommunityIcons, Ionicons, EvilIcons, Entypo, MaterialIcons, Octicons, Feather,AntDesign, } from '@expo/vector-icons';
+import { MaterialCommunityIcons, Ionicons, EvilIcons, Entypo, MaterialIcons, Octicons, Feather, AntDesign, } from '@expo/vector-icons';
 //https://cdn.zochil.shop/zochil.mn/cover.png
-export default function App({navigation}) {
+export default function App({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <View>
@@ -14,10 +14,16 @@ export default function App({navigation}) {
                     </View>
                     <Entypo style={{ fontSize: 30, marginLeft: 10 }} name="bell" />
                 </View>
-                <Image
-                    style={styles.tinyLogo}
-                    source={require('../cu_logo.jpg')}
-                />
+                    <View style={styles.cuuu}>
+  <ScrollView>
+    <Image
+      style={styles.tinyLogo}
+      source={require('../cu_logo.jpg')}
+    />
+  
+  </ScrollView>
+</View>
+ 
             </View>
             <View style={styles.su}>
                 <View style={styles.cu2}>
@@ -72,13 +78,13 @@ export default function App({navigation}) {
                         </View>
                     </View>
                 </View>
-                <View style={styles.ad} >                
-                        <Feather style={{fontSize: 30 }} name='coffee' />                       
-                        <MaterialCommunityIcons style={{ fontSize:30,marginLeft: 10, }} name='cupcake'/>
-                        <Ionicons style={{fontSize: 30,marginLeft: 30,  }} name='md-fast-food-outline'/>
-                        <MaterialCommunityIcons style={{fontSize: 30,marginLeft: 10, }} name='cup-water'/>
-                        <MaterialCommunityIcons style={{fontSize: 30 }} name='bottle-soda-classic-outline'/>
-                    </View>               
+                <View style={styles.ad} >
+                    <Feather style={{ fontSize: 30 }} name='coffee' />
+                    <MaterialCommunityIcons style={{ fontSize: 30, marginLeft: 10, }} name='cupcake' />
+                    <Ionicons style={{ fontSize: 30, marginLeft: 30, }} name='md-fast-food-outline' />
+                    <MaterialCommunityIcons style={{ fontSize: 30, marginLeft: 10, }} name='cup-water' />
+                    <MaterialCommunityIcons style={{ fontSize: 30 }} name='bottle-soda-classic-outline' />
+                </View>
                 <View />
             </View>
             <View style={styles.af}>
@@ -89,13 +95,13 @@ export default function App({navigation}) {
                 <Text>Ундаа</Text>
             </View>
             <View style={styles.ag} >
-                <AntDesign style={{fontSize: 30,}} name='home' />
-                <Pressable onPress={()=> navigation.navigate('Baraa')} >
-                <Feather style={{fontSize: 30 }} name='archive'/>
+                <AntDesign style={{ fontSize: 30, }} name='home' />
+                <Pressable onPress={() => navigation.navigate('Baraa')} >
+                    <Feather style={{ fontSize: 30 }} name='archive' />
                 </Pressable>
-                <AntDesign style={{fontSize: 30,marginRight:10, }} name='qrcode'/>
-                <AntDesign style={{fontSize: 30, }} name='tago'/>
-                <AntDesign  style={{fontSize: 30,marginRight:10, }} name='profile' />
+                <AntDesign style={{ fontSize: 30, marginRight: 10, }} name='qrcode' />
+                <AntDesign style={{ fontSize: 30, }} name='tago' />
+                <AntDesign style={{ fontSize: 30, marginRight: 10, }} name='profile' />
             </View>
             <View style={styles.uges} >
                 <Text>Нүүр</Text>
@@ -126,7 +132,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         flexDirection: 'row',
         marginLeft: 30,
-       
+
     },
     cuv1: {
         flexDirection: 'row',
@@ -226,24 +232,27 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         gap: 135,
     },
-    ad:{
+    ad: {
         flexDirection: 'row',
         justifyContent: "space-around",
         marginTop: 40,
     },
-    af:{
+    af: {
         flexDirection: 'row',
         justifyContent: "space-around",
     },
-    ag:{
+    ag: {
         flexDirection: 'row',
         justifyContent: "space-around",
         marginTop: 50,
     },
-uges:{
-    flexDirection: 'row',
-    justifyContent: "space-around",
-},
+    uges: {
+        flexDirection: 'row',
+        justifyContent: "space-around",
+    },
+    cuuu: {
+        flexDirection:'row',
+    },
 },
 
 )
