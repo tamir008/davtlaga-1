@@ -93,12 +93,16 @@ export default function App({navigation}) {
                 <Pressable onPress={()=> navigation.navigate('Baraa')} >
                 <Feather style={{fontSize: 30 }} name='archive'/>
                 </Pressable>
-                <AntDesign style={{fontSize: 30 }} name='qrcode'/>
-                <AntDesign style={{fontSize: 30 }} name='tago'/>
-                <AntDesign  style={{fontSize: 30 }} name='profile' />
+                <AntDesign style={{fontSize: 30,marginRight:10, }} name='qrcode'/>
+                <AntDesign style={{fontSize: 30, }} name='tago'/>
+                <AntDesign  style={{fontSize: 30,marginRight:10, }} name='profile' />
             </View>
-            <View>
-                <Text>sdsd</Text>
+            <View style={styles.uges} >
+                <Text>Нүүр</Text>
+                <Text>Бараа</Text>
+                <Text>QR</Text>
+                <Text>Купон</Text>
+                <Text>Миний</Text>
             </View>
 
         </SafeAreaView >
@@ -122,6 +126,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         flexDirection: 'row',
         marginLeft: 30,
+       
     },
     cuv1: {
         flexDirection: 'row',
@@ -234,9 +239,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: "space-around",
         marginTop: 50,
-
     },
-
+uges:{
+    flexDirection: 'row',
+    justifyContent: "space-around",
+},
 },
 
 )
